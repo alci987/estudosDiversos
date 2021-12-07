@@ -1,13 +1,13 @@
-nome = 'Raul Braga'
-idade = 23
-peso = 87.3
-altura = 1.93
-ano_atual = 2021
+nome = input("Qua seu nome? ")
+idade = input("Informe sua idade: ")
+peso = int(input("Quantos Kg pesa? "))
+altura = float(input("Sua altura? "))
 
-ano_Nascimento = ano_atual - idade 
-seuImc = peso / altura ** 2
+imc = peso / altura ** 2
 
-print(F'{nome} tem {idade} anos, {altura} de altura e pesa {peso} kg.')
-print(F'O imc de {nome} e de {seuImc:.2F}.')
-print(F'{nome} nasceu em {ano_Nascimento}.')
+print("Gerando Dados, aguarde!")
+from time import sleep
+sleep(3)   
 
+print(F'Seu nome e {nome}, tem {idade} anos e {altura} de altura.')
+print(F'Seu resultado do seu IMC foi de {imc:.2F}')
